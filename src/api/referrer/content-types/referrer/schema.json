@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "referrers",
+  "info": {
+    "singularName": "referrer",
+    "pluralName": "referrers",
+    "displayName": "Referrer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Referrer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "ReferredUser": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Date": {
+      "type": "datetime"
+    }
+  }
+}
